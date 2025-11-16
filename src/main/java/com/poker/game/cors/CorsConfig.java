@@ -13,8 +13,12 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://poker-gamenn.netlify.app")
-                        .allowedMethods("GET","POST","PUT","DELETE")
+                        .allowedOrigins(
+                                "http://localhost:3000",
+                                "https://poker-gamenn.netlify.app",
+                                "https://poker-backend-ecu5.onrender.com"
+                        )
+                        .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
             }
         };
