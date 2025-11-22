@@ -16,6 +16,7 @@ public class CorsConfig {
                         .allowedOrigins(
                                 "http://localhost:3000",
                                 "https://poker-gamenn.netlify.app",
+                                "https://golden-monstera-88f737.netlify.app",
                                 "https://poker-backend-ecu5.onrender.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
