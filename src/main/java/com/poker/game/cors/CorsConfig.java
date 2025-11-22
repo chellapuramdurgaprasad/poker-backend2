@@ -14,9 +14,9 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "http://localhost:3000",
-                                "https://poker-gamenn.netlify.app",
-                                "https://golden-monstera-88f737.netlify.app",
+                                "http://localhost:*",
+                                "https://golden-monstera-88f737.netlify.app",  // Your exact domain
+                                "https://*.netlify.app",                       // Mobile variations
                                 "https://poker-backend-ecu5.onrender.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
